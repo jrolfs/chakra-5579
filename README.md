@@ -8,7 +8,7 @@ My setup:
 
 ```shell
 cd <chakra-repo>
-# checkout PR branch
+# checkout PR branch and build project
 cd <chakra-repo>/packages/react
 yarn link
 cd <chakra-repo>/packages/styled-system
