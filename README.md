@@ -1,3 +1,28 @@
+# [Chakra UI PR 5579](https://github.com/chakra-ui/chakra-ui/pull/5579)
+
+## Theme augmentation demo
+
+I could not get it to work with `yarn link`
+
+My setup:
+
+```shell
+cd <chakra-repo>
+# checkout PR branch
+cd <chakra-repo>/packages/react
+yarn link
+cd <chakra-repo>/packages/styled-system
+yarn link
+
+cd <this-repo>
+yarn link "@chakra-ui/react"
+yarn link "@chakra-ui/styled-system"
+
+# try autocomplete in /src/App.tsx
+```
+
+---
+
 This project was bootstrapped with
 [Create React App](https://github.com/facebook/create-react-app).
 
