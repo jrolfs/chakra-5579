@@ -1,15 +1,15 @@
-import { BaseThemeTypings } from "@chakra-ui/styled-system"
+import "@chakra-ui/styled-system";
 
-type DefaultSizes = 'small' | 'medium' | 'large';
+type DefaultSizes = "small" | "medium" | "large";
 
 declare module "@chakra-ui/styled-system" {
-  export interface CustomThemeTypings extends BaseThemeTypings {
-    borders: 'none' | 'thin' | 'thick';
+  export interface ThemeTypings {
+    borders: "none" | "thin" | "thick";
     components: {
       Button: {
         sizes: DefaultSizes;
-        variants: 'wacky' | 'chill';
+        variants: "chill" | "wacky";
       };
-    }
+    };
   }
 }
