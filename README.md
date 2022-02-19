@@ -1,22 +1,17 @@
 # [Chakra UI PR 5579](https://github.com/chakra-ui/chakra-ui/pull/5579)
 
-## Theme augmentation demo
+## Theme augmentation demo (existing Chakra types)
 
 I could not get it to work with `yarn link`
 
 My setup:
 
 ```shell
-cd <chakra-repo>
-# checkout PR branch and build project
-cd <chakra-repo>/packages/react
-yarn link
-cd <chakra-repo>/packages/styled-system
-yarn link
-
 cd <this-repo>
-yarn link "@chakra-ui/react"
-yarn link "@chakra-ui/styled-system"
+yarn unlink "@chakra-ui/react"
+yarn unlink "@chakra-ui/styled-system"
+
+yarn install --force
 
 # try autocomplete in /src/App.tsx
 ```
