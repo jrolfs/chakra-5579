@@ -7,8 +7,15 @@ declare module "@chakra-ui/styled-system" {
     borders: "none" | "thin" | "thick";
     components: {
       Button: {
-        sizes: DefaultSizes;
-        variants: "chill" | "wacky";
+        sizes: "lg" | "md" | "sm" | "xs" | "enormous" | (string & {});
+        variants:
+          | "ghost"
+          | "outline"
+          | "solid"
+          | "link"
+          | "unstyled"
+          | "wacky"
+          | (string & {});
       };
     };
   }
